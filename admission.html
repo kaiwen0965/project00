@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission</title>
+  <link rel="icon" href="./img/logo.png" />
+
+  <!--Google Font-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" />
+
+  <!--CSS-->
+
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+  <!--Preloader-->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!--Header-->
+  <header class="header">
+    <a href="./index.html" class="site-logo"><img src="./img/faculty.png" alt="logo" width="180" /></a>
+    <div class="fafabar">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div class="navigation">
+      <ul class="menu">
+        <li><a href="./index.html" style="color: #bc1823">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Undergraduate</a></li>
+        <li><a href="#">Postgraduate</a></li>
+        <li><a href="./admission.html" style="color: #bc1823">Admission</a></li>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!--Admission banner-->
+  <section class="admission-banner-section">
+    <div class="container">
+      <div class="admission-banner set-bg" data-setbg="./img/admission.jpg">
+        <div class="admission-apply">
+          <h3>We're looking forward to welcome you!</h3>
+          <!-- <a href="#" class="apply-btn" onclick="document.getElementById('form').style.display='block'">APPLY NOW</a> -->
+          <a href="#" class="apply-btn">APPLY NOW</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Apply Form-->
+  <div id="form" class="wrapper">
+    <span onclick="document.getElementById('form').style.display='none'" class="btn-close"><i
+        class="fa fa-times-circle"></i></span>
+    <header>Apply Form</header>
+    <form>
+      <div class="field name">
+        <div class="input-area">
+          <input type="text" placeholder="Name">
+          <i class="icon fa fa-user-o"></i>
+          <i class="error error-icon fa fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Name cannot be blank</div>
+      </div>
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Email Address">
+          <i class="icon fa fa-envelope"></i>
+          <i class="error error-icon fa fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email Address cannot be blank</div>
+      </div>
+      <div class="field contact">
+        <div class="input-area">
+          <input type="text" placeholder="Contact Number">
+          <i class="icon fa fa-mobile"></i>
+          <i class="error error-icon fa fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Contact number cannot be blank</div>
+      </div>
+      <div class="field address">
+        <div class="input-area">
+          <input type="text" placeholder="Address ">
+          <i class="icon fa fa-home"></i>
+          <i class="error error-icon fa fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Address cannot be blank</div>
+      </div>
+
+      <input type="submit">
+    </form>
+  </div>
+
+  <!--Admission Overview-->
+  <section class="overview-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 overview-details">
+          <a href="#admission">
+            <div class="in-bg">
+              <i class="fa fa-users"></i>
+              <h5>Admission</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 overview-details">
+          <a href="#intakes">
+            <div class="in-bg">
+              <i class="fa fa-calendar-plus-o"></i>
+              <h5>Intakes</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 overview-details">
+          <a href="#fees">
+            <div class="in-bg">
+              <i class="fa fa-dollar"></i>
+              <h5>Fees Structure</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 overview-details">
+          <a href="#scholar">
+            <div class="in-bg">
+              <i class="fa fa-gift"></i>
+              <h5>Scholarship</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Admission Section-->
+  <section class="admission-section" id="admission">
+    <div class="container">
+      <h1>Admission</h1>
+      <div class="admission">
+        <button type="button" class="collapsible" onclick="loadGeneral()">
+          GENERAL ENTRY REQUIREMENT
+        </button>
+        <div class="content">
+          <h4>General Entry Bachelor Degree in Computer Science</h4>
+          <ul>
+            <li>
+              All students must graduate from high school and with Sijil
+              Pelajaran Malaysia (SPM) based on the minimum requirement as
+              stated below. If any of the applicants that do not fullfill the
+              general requirement as stated below, your application will not
+              be considered.
+            </li>
+            <li>
+              Student who would like to enroll in Bachelor Degree in Computer
+              Science must have a minimum requirement of A-Level or STPM
+              equivalent certification.
+            </li>
+          </ul>
+          <table id="general"></table>
+        </div>
+      </div>
+      <div class="admission">
+        <button type="button" class="collapsible" onclick="loadLang()">
+          ENGLISH LANGUAGE PROFICIENCY REQUIREMENT
+        </button>
+        <div class="content">
+          <h4>English Minimum Entry Requirement</h4>
+          <ul>
+            <li>
+              Student has to achieve a minimum of B+ in Sijil Pelajaran
+              Malaysia English and B in GCE English Sijil Pelajaran Malaysia.
+            </li>
+            <li>
+              Proficiency in english is crucially important. The minimum
+              requirement and exemption for local student and international
+              are strictly different. International Student are require to
+              take IELTS/TOEFL or equivalent English exam test with a minimum
+              requirement of marks as stated below
+            </li>
+            <li>
+              Local student who do not fullfill the minimum requirement as
+              shown below are required to take english exam test as a test
+              before entering university. A short interview session will be
+              carried out and extra charges on english examination will also
+              be entitle.
+            </li>
+          </ul>
+          <table id="lang"></table>
+        </div>
+      </div>
+      <div class="admission">
+        <button type="button" class="collapsible">
+          ACADEMIC REQUIREMENT
+        </button>
+        <div class="content">
+          <h4>Courses Specific Entry Requirements</h4>
+          <ul>
+            <li>
+              All student should achieve at least a B+ for Mathematics subject
+              in Sijil Pelajaran Malaysia.
+            </li>
+            <li>
+              Certification of Sijil Pelajaran Malaysia Certification is
+              compulsory to be present during the entry application.
+            </li>
+            <li>
+              In order to enter Stockholm University, students has to be
+              offered and aceept the offer letter which is the same as the
+              Bachelor Degree which were applied.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="admission">
+        <button type="button" class="collapsible">CREDIT TRANSFER</button>
+        <div class="content">
+          <h4>Study Transfer and Exemptions</h4>
+          <ul>
+            <li>
+              Exemptions are valid for student who are involve in such as
+              exchange of study or transfer of university.
+            </li>
+            <li>
+              Results of equivalent will be able to transfer to the University
+              of Stockholm but terms and conditions will be applied.
+            </li>
+            <li>
+              Transfer and Exemptions of results is important and need to be
+              clarify upon application of entry.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="admission">
+        <button type="button" class="collapsible">
+          INTERNATIONAL ADMISSION
+        </button>
+        <div class="content">
+          <h4>International Students Application</h4>
+          <ul>
+            <li>
+              International students are require to make their application and
+              accept the offer letter for education visa if applicable.
+            </li>
+            <li>
+              International students need to make enquiry via international
+              hotline of University of Stockholm or drop an email to the
+              admission advisor for better handling and understanding of the
+              procedure. Our advisor will give our professional assistance to
+              you.
+            </li>
+            <li>
+              Please also refer to the english language proficiency
+              requirement and make sure applicants do fulfill all the criteria
+              to prevent rejection of results. English examination is strictly
+              requested by all the government before enrolling in university.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Intakes-->
+  <section class="intake-section" id="intakes">
+    <div class="container">
+      <h1>Stockholm Intakes</h1>
+      <p>
+        Different course will have different time of intake. You may subscribe
+        to the intakes email notifications by filling your email below. You
+        will be notify immediately on the latest intake period and courses
+        from email.
+      </p>
+      <div class="table-intake">
+        <table>
+          <tr>
+            <th id="intake-course">Course</th>
+            <th id="se">software engineering</th>
+            <th id="ne">network engineering</th>
+            <th id="se">data science</th>
+            <th id="se">business computing</th>
+            <th id="se">mobile development</th>
+            <th id="se">game development</th>
+          </tr>
+
+          <tr>
+            <td id="intake-course">march intake</td>
+            <td id="se"><i class="fa fa-check-circle"></i></td>
+            <td id="ne"></td>
+            <td id="se"></td>
+            <td id="se"><i class="fa fa-check-circle"></i></td>
+            <td id="se"><i class="fa fa-check-circle"></i></td>
+            <td id="se"></td>
+          </tr>
+
+          <tr>
+            <td id="intake-course">june intake</td>
+            <td id="se"><i class="fa fa-check-circle"></i></td>
+            <td id="ne"><i class="fa fa-check-circle"></i></td>
+            <td id="se"><i class="fa fa-check-circle"></i></td>
+            <td id="se"></td>
+            <td id="se"></td>
+            <td id="se"><i class="fa fa-check-circle"></i></td>
+          </tr>
+
+          <tr>
+            <td id="intake-course">september intake</td>
+            <td id="se"><i class="fa fa-check-circle"></i></td>
+            <td id="ne"></td>
+            <td id="se"><i class="fa fa-check-circle"></i></td>
+            <td id="se"></td>
+            <td id="se"></td>
+            <td id="se"><i class="fa fa-check-circle"></i></td>
+          </tr>
+        </table>
+      </div>
+      <div class="noti-alert">
+        <input type="text" placeholder="Please insert your email" id="email-add" />
+        <button id="noti-btn" onclick="emailVerify()">
+          <i class="fa fa-bell"></i>&nbsp;&nbsp;Email notifications
+        </button>
+        <br />
+        <label for="" id="err-msg"></label>
+      </div>
+    </div>
+  </section>
+
+  <!--Costs Structure-->
+  <section class="cost-struct-section" id="fees">
+    <div class="container">
+      <h1>Fees Structure</h1>
+      <ul>
+        <li>
+          Based on the cost structure given in the table below, all the price
+          are subject to change.
+        </li>
+        <li>
+          The price list given are price of non-scholorship and non-waived.
+          Students with study aid should refer to respective loan or contract
+          terms and conditions.
+        </li>
+        <li>
+          International Students and Local Students price list are different
+          due to foreign tax and also other taxes which will be apply in the
+          tuition fees.
+        </li>
+        <li>
+          Tuition fees and also facilities fees will be charged and amount are
+          subject to change of different year. Please refer to the academic
+          administrator consultant for the latest price list.
+        </li>
+        <li>All fees shown are counted as per annum.</li>
+      </ul>
+      <table>
+        <tr>
+          <th id="course">Course</th>
+          <th id="lstud">Local Student</th>
+          <th id="istud">International Student</th>
+          <th id="facilities">Facilities Fees</th>
+        </tr>
+
+        <tr>
+          <td id="course">Software Engineering</td>
+          <td id="lstud">RM24,960</td>
+          <td id="istud">RM31,600</td>
+          <td id="facilities">RM5,000</td>
+        </tr>
+
+        <tr>
+          <td id="course">Network Engineering</td>
+          <td id="lstud">RM24,960</td>
+          <td id="istud">RM31,600</td>
+          <td id="facilities">RM5,000</td>
+        </tr>
+
+        <tr>
+          <td id="course">Data Science</td>
+          <td id="lstud">RM24,960</td>
+          <td id="istud">RM31,600</td>
+          <td id="facilities">RM5,000</td>
+        </tr>
+
+        <tr>
+          <td id="course">Business Computing</td>
+          <td id="lstud">RM24,960</td>
+          <td id="istud">RM31,600</td>
+          <td id="facilities">RM5,000</td>
+        </tr>
+
+        <tr>
+          <td id="course">Mobile Development</td>
+          <td id="lstud">RM24,960</td>
+          <td id="istud">RM31,600</td>
+          <td id="facilities">RM5,000</td>
+        </tr>
+
+        <tr>
+          <td id="course">Gaming Development</td>
+          <td id="lstud">RM24,960</td>
+          <td id="istud">RM31,600</td>
+          <td id="facilities">RM5,000</td>
+        </tr>
+      </table>
+      <div class="pow-icon">
+        <h5>Payment Powered By:</h5>
+        <div class="pay-icon">
+          <i class="fa fa-cc-amex"></i>
+          <i class="fa fa-cc-visa"></i>
+          <i class="fa fa-cc-mastercard"></i>
+          <i class="fa fa-cc-paypal"></i>
+          <i class="fa fa-cc-stripe"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Scholarships-->
+  <section class="scholar-section" id="scholar">
+    <div class="container">
+      <div class="scholar-header">
+        <h1>Scholarships Offered</h1>
+        <p>
+          Scholarship offered are differentiated into 2 different category,
+          please do read in details about the terms and conditions before
+          application is made. Cancellation of scholarships are not applicable
+          to make application again.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 scholar-details">
+          <h3>Excellence Scholarship</h3>
+          <ul>
+            <li>
+              Student which fulfill the minimum requirement of excellent
+              results are applicable to make application upon the opening of
+              the slot.
+            </li>
+            <li>
+              Student should maintain a result of minimum GPA 3.50 for every
+              semester for the continuation of scholarship.
+            </li>
+            <li>
+              Each student are only applicable with one scholarship, if was
+              found violating this rules, your scholarship shall be terminate
+              and compensation are require.
+            </li>
+            <li>
+              University of Stockholm has full rights on making decision and
+              qualifications.
+            </li>
+            <li>
+              New student can only make application after an offer letter has
+              been issued from University of Stockholm and accepted by your
+              party.
+            </li>
+            <li>
+              Submit your application by logging in into your students
+              account. We only accept online application.
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6 scholar-details">
+          <h3>Loan and Career Scholarship</h3>
+          <ul>
+            <li>
+              Loan and career scholarship aim to allow student with good
+              results to be able to secure a job after graduate.
+            </li>
+            <li>
+              The career opportunities are based on availability and also the
+              collaboration with fellowship of University of Stockholm.
+            </li>
+            <li>
+              Career opportunities are based on personal capabilities and also
+              human talent, a contract of minimum 2 years will be required,
+              based on different terms and regulations.
+            </li>
+            <li>
+              Each student are only applicable with one scholarship, if was
+              found violating this rules, your scholarship shall be terminate
+              and compensation are require.
+            </li>
+            <li>
+              University of Stockholm reserved the rights to terminate the
+              scholarship if terms and condition were found violated.
+            </li>
+            <li>
+              New student can only make application after an offer letter has
+              been issued from University of Stockholm and accepted by your
+              party.
+            </li>
+            <li>
+              Submit your application by logging in into your students
+              account. We only accept online application.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="login-btn">
+        <button type="submit" class="scholar-btn">
+          Login to Submit Application
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!--Admission Advisor-->
+  <section class="advisor-section">
+    <div class="container">
+      <div class="advisor-title">
+        <h1>Advisor Administrator</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 advisorColumn">
+          <h3 style="color: #bc1823;">Local Students</h3>
+          <div class="advisor-details">
+            <div class="advisor">
+              <h5>Operating Hours</h5>
+              <div class="frameAdvisor">
+                <i class="fa fa-clock-o"></i>
+                <div class="info">Monday-Friday<br />9:00am - 4:30pm</div>
+              </div>
+            </div>
+
+            <div class="advisor">
+              <h5>Contact Extensions</h5>
+              <div class="frameAdvisor">
+                <i class="fa fa-phone"></i>
+                <div class="info">+(603)8264655<br />EXT: 5678</div>
+              </div>
+            </div>
+
+            <div class="advisor">
+              <h5>Email</h5>
+              <label><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;&nbsp;<a
+                  href="mailto:stockholm@university.fit.edu.my">Stockholm Local Student Enquiry</a></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 advisorColumn">
+          <h3 style="color: #bc1823;">International Students</h3>
+          <div class="advisor-details">
+            <div class="advisor">
+              <h5>Operating Hours</h5>
+              <div class="frameAdvisor">
+                <i class="fa fa-clock-o"></i>
+                <div class="info">Monday-Friday<br />9:00am - 4:30pm</div>
+              </div>
+            </div>
+
+            <div class="advisor">
+              <h5>Contact Extensions</h5>
+              <div class="frameAdvisor">
+                <i class="fa fa-phone"></i>
+                <div class="info">+(603)8264655<br />EXT: 5678</div>
+              </div>
+            </div>
+
+            <div class="advisor">
+              <h5>Email</h5>
+              <label><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;&nbsp;<a
+                  href="mailto:stockholm@university.fit.edu.my">Stockholm International Student Enquiry</a></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer Section-->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="footer-logo col-lg-3">
+          <img src="./img/faculty.png" width="250px" />
+          <div class="social-media">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-info col-lg-9">
+          <div class="row">
+            <div class="footer-col col-lg-4">
+              <ul>
+                <h5>Navigation</h5>
+                <li><a href="./index.html" style="color: #bc1823">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Undergraduate</a></li>
+        <li><a href="#">Postgraduate</a></li>
+        <li><a href="./admission.html" style="color: #bc1823">Admission</a></li>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col col-lg-4">
+              <ul>
+                <h5>Quick Links</h5>
+                <li><a href="#">Sponsorships</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Study support and resources</a></li>
+                <li><a href="#">Student services and wellbeing</a></li>
+                <li><a href="#">Work and study opportunities</a></li>
+              </ul>
+            </div>
+            <div class="footer-col col-lg-4">
+              <ul>
+                <h5>Contact</h5>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Staff directory</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      All rights reserved
+    </div>
+  </footer>
+
+  <!--Javascript-->
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

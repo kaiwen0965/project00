@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faculty of Computing and Informatics</title>
+  <link rel="icon" href="./img/logo.png" />
+
+  <!--Google Font-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" />
+
+  <!--CSS-->
+
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+  <!--Preloader-->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!--Header-->
+  <header class="header">
+    <a href="./index.html" class="site-logo"><img src="./img/faculty.png" alt="logo" width="180" /></a>
+    <div class="fafabar">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div class="navigation">
+      <ul class="menu">
+        <li><a href="./index.html" style="color: #bc1823">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Undergraduate</a></li>
+        <li><a href="#">Postgraduate</a></li>
+        <li><a href="./admission.html" style="color: #bc1823">Admission</a></li>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!--Enquiry Form-->
+
+  <!--banner slider-->
+  <section class="banner-section">
+    <div class="banner-slider">
+      <div class="slide active">
+        <img src="./img/ban5.jpg" alt="information technology" />
+      </div>
+
+      <div class="slide">
+        <img src="./img/ban1.jpg" alt="university" />
+      </div>
+
+      <div class="slide">
+        <img src="./img/ban4.jpg" alt="graduate" />
+      </div>
+
+      <div class="slide">
+        <img src="./img/ban3.jpg" alt="university" />
+      </div>
+
+      <div class="banner-nav">
+        <i class="fa fa-chevron-left prev-btn"></i>
+        <i class="fa fa-chevron-right next-btn"></i>
+      </div>
+
+      <div class="ban-info">
+        <div class="container">
+          <h2>We're accepting applications now!</h2>
+          <a href="#" class="apply-btn" onclick="document.getElementById('form').style.display='block'" >APPLY NOW</a>
+          <!-- <a href="#" class="apply-btn" >APPLY NOW</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Apply Form-->
+  <div id="form" class="wrapper">
+    <span onclick="document.getElementById('form').style.display='none'" class="btn-close"><i
+        class="fa fa-times-circle"></i></span>
+    <header>Apply Form</header>
+    <form>
+      <div class="field name">
+        <div class="input-area">
+          <input type="text" placeholder="Name">
+          <i class="icon fa fa-user-o"></i>
+          <i class="error error-icon fa fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Name cannot be blank</div>
+      </div>
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Email Address">
+          <i class="icon fa fa-envelope"></i>
+          <i class="error error-icon fa fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email Address cannot be blank</div>
+      </div>
+      <div class="field contact">
+        <div class="input-area">
+          <input type="text" placeholder="Contact Number">
+          <i class="icon fa fa-mobile"></i>
+          <i class="error error-icon fa fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Contact number cannot be blank</div>
+      </div>
+      <div class="field address">
+        <div class="input-area">
+          <input type="text" placeholder="Address ">
+          <i class="icon fa fa-home"></i>
+          <i class="error error-icon fa fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Address cannot be blank</div>
+      </div>
+
+      <input type="submit">
+    </form>
+  </div>
+
+  <!--Education section-->
+  <section class="education-section">
+    <div class="container">
+      <h1>Education</h1>
+      <div class="row">
+        <div class="undergraduate col-lg-6">
+          <a href="#"><img src="./img/undergraduate.jpeg" width="500px" />
+            <h4>Undergraduate</h4>
+          </a>
+        </div>
+        <div class="postgraduate col-lg-6">
+          <a href="#"><img src="./img/postgraduate.jpg" width="500px" height="281.5px" />
+            <h4>Postgraduate</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Facts and Figures-->
+  <section class="figure-section">
+    <div class="title">
+      <h1>Fact & Figures</h1>
+      <p>* as of December 2021</p>
+    </div>
+    <div class="counter-up">
+      <div class="figure-content">
+        <div class="figure-box">
+          <div class="counter">3671</div>
+          <div class="text">Undergraduate Students</div>
+        </div>
+        <div class="figure-box">
+          <div class="counter">1069</div>
+          <div class="text">Postgraduate Students</div>
+        </div>
+        <div class="figure-box">
+          <div class="counter">225</div>
+          <div class="text">International Students</div>
+        </div>
+        <div class="figure-box">
+          <div class="counter">40</div>
+          <div class="text">Academic Staffs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Stockholm Benefits-->
+  <section class="stock-bene">
+    <div class="container">
+      <div class="stock-title">
+        <h1>Why Stockholm Information Technology?</h1>
+        <p>
+          As the leading of Information Technology Schools Internationally,
+          Stockholm would like to share with you our experience in educating
+          talent of next generation.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 stock-content">
+          <div class="stock-info">
+            <a href="">
+              <i class="fa fa-bar-chart"></i>
+              <h5>World Top 10%</h5>
+              <p>
+                As the world top 1.0% of excellence in producing students of
+                world top 10 MNC company such as Intel, Dell and HP. QS World
+                Ranking top 10% for subject Software engineering, Network
+                Engineering and Data Science.
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 stock-content">
+          <div class="stock-info">
+            <a href="">
+              <i class="fa fa-bullhorn"></i>
+              <h5>Highest Graduates Employability in South East Asia</h5>
+              <p>
+                Graduates from Stockholm are always secure with a better job
+                opportunities and also be sure to have a good corporate ladder
+                in the coming future. Be sure you are always with us.
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 stock-content">
+          <div class="stock-info">
+            <a href="">
+              <i class="fa fa-certificate"></i>
+              <h5>Qualification for Professional Certifications</h5>
+              <p>
+                Professional Examination certifacations for all the respective
+                subject were also provided to students to improve their
+                competency when in their career. They will have a bigger leap.
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 stock-content">
+          <div class="stock-info">
+            <a href="">
+              <i class="fa fa-map-signs"></i>
+              <h5>World Best Partnership Collaboration</h5>
+              <p>
+                World class Partnership companies such as Dell, IBM and
+                Microsoft which provides students with better opportunities to
+                enroll in better environment and study atmosphere.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--info section-->
+  <section class="info-section">
+    <div class="container">
+      <div class="row">
+        <div class="news-update col-lg-6">
+          <h3>News & Updates</h3>
+          <div class="news-content">
+            <img
+              src="https://thumbs.dreamstime.com/b/coronavirus-warning-attention-icon-exclamation-mark-health-danger-sign-covid-epidemic-pandemic-symbol-simple-flat-logo-173839495.jpg"
+              width="30%" />
+            <div class="news-content-info">
+              <a href="#" class="info-link">
+                <h5>Covid-19 Updates</h5>
+                <p>Please follow sop.</p>
+              </a>
+            </div>
+          </div>
+          <div class="news-content">
+            <img src="https://neilpatel.com/wp-content/uploads/2021/07/facebook-contest_featured-image-3.png"
+              width="30%" />
+            <div class="news-content-info">
+              <a href="#" class="info-link">
+                <h5>Portfolio Website Contest</h5>
+                <p>click for more details</p>
+              </a>
+            </div>
+          </div>
+          <div class="news-content">
+            <img src="https://image.shutterstock.com/image-photo/young-graduated-boy-holding-his-260nw-1997505305.jpg"
+              width="30%" />
+            <div class="news-content-info">
+              <a href="#" class="info-link">
+                <h5>Convocation</h5>
+                <p>31 May 2022.</p>
+              </a>
+            </div>
+          </div>
+          <a href="#">View more</a>
+        </div>
+        <div class="upcoming-event col-lg-6">
+          <h3>Upcoming Events</h3>
+          <div class="upcoming-event-content">
+            <div class="upcoming-event-date">
+              <h4>
+                30 <br />
+                <span>MAY</span>
+              </h4>
+            </div>
+            <div class="upcoming-event-title">
+              <h4>Convocation</h4>
+              <div class="upcoming-event-time">
+                <i class="fa fa-clock-o"></i><span> 09:00 - 17:00</span>
+                <br />
+                <i class="fa fa-map-marker"></i><span> Dewan Canselor</span>
+              </div>
+            </div>
+          </div>
+          <div class="upcoming-event-content">
+            <div class="upcoming-event-date">
+              <h4>
+                31 <br />
+                <span>MAY</span>
+              </h4>
+            </div>
+            <div class="upcoming-event-title">
+              <h4>Convocation</h4>
+              <div class="upcoming-event-time">
+                <i class="fa fa-clock-o"></i><span> 09:00 - 17:00</span>
+                <br />
+                <i class="fa fa-map-marker"></i><span> Dewan Canselor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Search section-->
+  <section class="search-section">
+    <div class="container">
+      <div class="section-title">
+        <h1>Search our courses</h1>
+      </div>
+      <div class="search-form-warp">
+        <form class="course-search-form" onsubmit="return alertSearchTerm(event)">
+          <input type="text" id="course-search-input" placeholder="&#xF002; Courses" style="font-family: Arial, FontAwesome" />
+          <button type="submit" class="site-btn">Search</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function alertSearchTerm(event) {
+        event.preventDefault();
+        var searchTerm = document.getElementById("course-search-input").value;
+        if (searchTerm == "")
+        {
+          alert("Please type anything to search.");
+        } else {
+          alert("You searched for: " + searchTerm);
+
+        }
+      }
+    </script>
+    
+  </section>
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="footer-logo col-lg-3">
+          <img src="./img/faculty.png" width="250px" />
+          <div class="social-media">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-info col-lg-9">
+          <div class="row">
+            <div class="footer-col col-lg-4">
+              <ul>
+                <h5>Navigation</h5>
+                <li><a href="./index.html" style="color: #bc1823">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Undergraduate</a></li>
+        <li><a href="#">Postgraduate</a></li>
+        <li><a href="./admission.html" style="color: #bc1823">Admission</a></li>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col col-lg-4">
+              <ul>
+                <h5>Quick Links</h5>
+                <li><a href="#">Sponsorships</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Study support and resources</a></li>
+                <li><a href="#">Student services and wellbeing</a></li>
+                <li><a href="#">Work and study opportunities</a></li>
+              </ul>
+            </div>
+            <div class="footer-col col-lg-4">
+              <ul>
+                <h5>Contact</h5>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Staff directory</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      All rights reserved
+    </div>
+  </footer>
+
+  <!--Javascript-->
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</body>
+
+</html>
